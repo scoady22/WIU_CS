@@ -1,0 +1,45 @@
+ ----jGRASP exec: java SortIntsFromFile2 integers.txt
+
+Original Array
+213
+56
+567
+19
+New Array
+19
+56
+213
+567
+
+ ----jGRASP: operation complete.
+ 
+----jGRASP exec: java SortDoublesFromFile2 doubles.txt
+
+Original Array
+71.5
+4.25
+120.307
+28.001
+4.25
+28.001
+71.5
+120.307
+
+ ----jGRASP: operation complete.
+ 
+----jGRASP exec: java SortWordsFromFile2 words.txt
+
+Original Array
+orange
+blue
+red
+black
+purple
+Sorted Array
+black
+blue
+orange
+purple
+red
+
+ ----jGRASP: operation complete.

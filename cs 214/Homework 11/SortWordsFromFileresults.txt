@@ -1,0 +1,16 @@
+ ----jGRASP exec: java SortWordsFromFile words.txt
+
+Original Array
+orange
+blue
+red
+black
+purple
+Sorted Array
+black
+blue
+orange
+purple
+red
+
+ ----jGRASP: operation complete.

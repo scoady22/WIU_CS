@@ -1,0 +1,15 @@
+hilal 2 9
+etehad 5 7 
+kahdmah 6 8
+naser 5 8 
+wehdah 9 5
+eain 4 8
+shargah 7 2
+Shabab 10 0
+etefaq 4 8
+abha 9 8
+sdos 4 5
+real Maderid 5 4 
+alarabi 6 5
+najran 5 4
+alkalej 3 6

@@ -1,0 +1,28 @@
+//Sean Coady
+//SortWordsFromFile2.java
+import library.ArrayHelp;
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+public class SortWordsFromFile2
+{
+  public static void main(String[]args) throws IOException
+  {
+  String[] words = new String[5];
+  int size = readDataFromFile(args[0],words);
+  ArrayHelp.sortWords(words,size);
+  }
+  public static int readDataFromFile(String fileName,String[] words) throws IOException
+   {
+	  Scanner fileScan = new Scanner(new File(fileName));
+	  int count = 0;
+	  System.out.println("Original Array");
+	  while(fileScan.hasNext() )
+	  {
+	    words[count] = fileScan.nextLine();
+		 System.out.println(words[count]);
+		 count++;
+	  }
+	  return count;
+	}
+}

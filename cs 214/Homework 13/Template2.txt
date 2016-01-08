@@ -1,0 +1,40 @@
+//Template2.java
+//Sean Coady
+import java.awt.*;
+import javax.swing.*;
+
+public class Template2
+{
+  //sets up main panel and 2 subpanels
+  
+  public static void main(String[]args)
+    {
+	   JFrame frame = new JFrame("Template 2");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//set up main panel
+		JPanel mainPanel = new JPanel();
+		mainPanel.setBackground(Color.red);
+		mainPanel.setPreferredSize(new Dimension(500,400));
+		
+		//set up a subPanel
+		JPanel panel1 = new JPanel();
+		panel1.setBackground(Color.blue);
+		panel1.setPreferredSize(new Dimension(200,100));
+	   JLabel label1 = new JLabel("One");
+		panel1.add(label1);
+		
+		JPanel panel2 = new JPanel();
+		panel2.setBackground(Color.green);
+		panel2.setPreferredSize(new Dimension(200,100));
+		JLabel label2 = new JLabel("Two");
+		panel2.add(label2);
+	   
+		
+		frame.getContentPane().add(mainPanel);
+		mainPanel.add(panel1);
+		mainPanel.add(panel2);
+		frame.pack();
+		frame.setVisible(true);
+	 }
+}

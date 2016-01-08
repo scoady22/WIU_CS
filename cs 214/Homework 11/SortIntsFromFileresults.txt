@@ -1,0 +1,12 @@
+Original Array
+213
+56
+567
+19
+New Array
+19
+56
+213
+567
+
+ ----jGRASP: operation complete.

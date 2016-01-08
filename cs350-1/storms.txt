@@ -1,0 +1,10 @@
+Ahmed     2000   4
+Ali       2005   2
+Mhammed   2003   5
+Alexis    2001   3
+Ashley    2002   1
+Charles   1997   5
+Charmane  1999   4
+Emily     2008   3
+Kristen   2006   1
+Abodual   1998   2

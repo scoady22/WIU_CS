@@ -1,0 +1,13 @@
+Bob 3.4
+John 1.8
+Ken 2.9
+Luke 3.0
+Alex 2.0
+Rob 1.0
+Jordan 3.9
+Rick 4.0
+Jim 3.1
+Kim 3.7
+Chad 2.3
+Melissa 2.8
+Sean 3.6

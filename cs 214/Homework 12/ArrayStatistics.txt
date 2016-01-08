@@ -1,0 +1,74 @@
+//Sean Coady
+//ArrayStatstics.java
+import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+public class ArrayStatistics 
+{
+  public static void main(String[]args) throws IOException
+    {
+	   int[]number = new int[6];
+		int size = readDataFromFile(args[0],number);
+		sortData(size,number);
+	 }
+  public static int readDataFromFile(String fileName, int[]number) throws IOException
+    {
+	   Scanner fileScan = new Scanner(new File(fileName) );
+		int count = 0 ;
+		System.out.println("Original Array");
+		while(fileScan.hasNext())
+		{
+		  number[count] = fileScan.nextInt();
+		  System.out.println(number[count]);
+		  count++;
+	   }
+	  return count;
+	 }
+	public static void sortData(int size,int[]number)
+	 {
+	   for (int i=0; i<size-1; i++) 
+	   {
+       for (int j=i+1; j<size; j++) 
+		  {
+         if (number[i] > number[j]) 
+		    {
+            //... Exchange elements
+            int temp = number[i];
+            number[i] = number[j];
+            number[j] = temp;
+		    }
+         }
+		 }
+		  int n = 0;
+		  double avg = 0.0;
+		  int sum = 0;
+		  while(n< size)
+		   {
+		    System.out.println(number[n]);
+		    sum += number[n];
+		    n++;
+		   }
+		   avg = (sum / size);
+		   System.out.println("The average is: "+avg);  
+			int x = (number.length - 1);
+			int median; 
+		    if(size % 2 != 0)
+		     {
+		      median = number[x / 2];
+				System.out.println("The median is: "+ median);
+		     }
+		    else if(size % 2 == 0) 
+		     { 
+		      int medianHelp = x / 2;
+			   median = (number[medianHelp]) + (number[medianHelp - 1]) / 2;
+		      System.out.println("The median is: "+median);  
+			  } 
+			  System.out.println("The range is from: "+number[0]+" to "+(number[x]));
+	  }
+}	
+
+	
+		
+	   
+		

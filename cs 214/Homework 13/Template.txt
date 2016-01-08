@@ -1,0 +1,30 @@
+//Template.java
+//Sean Coady
+import java.awt.*;
+import javax.swing.*;
+
+public class Template
+{
+  //sets up a main panel that other components can be added to.
+  public static void main(String[]args)
+    {
+	   JFrame frame = new JFrame("Template");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//Set up main panel
+		JPanel mainPanel = new JPanel();
+		mainPanel.setBackground(new Color(220,250,0) );
+		mainPanel.setPreferredSize(new Dimension(200,100));
+		
+		//set up any other components here
+		//example: JPanel subPanell = new JPanel();
+		
+		//add any other compononents created ot main panel here
+		//example: mainPanel.add(subPanell);
+		
+		//add main panel to the content pane for this frame
+		frame.getContentPane().add(mainPanel);
+		frame.pack();
+		frame.setVisible(true);
+	 }
+}

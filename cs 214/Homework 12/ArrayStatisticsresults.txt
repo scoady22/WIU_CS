@@ -1,0 +1,39 @@
+ ----jGRASP exec: java ArrayStatistics ints.txt
+
+Original Array
+20
+480
+10
+160
+70
+50
+10
+20
+50
+70
+160
+480
+The average is: 131.0
+The median is: 60
+The range is from: 10 to 480
+
+ ----jGRASP: operation complete.
+
+ ----jGRASP exec: java ArrayStatistics salaries.txt
+
+Original Array
+250000
+30000
+20000
+40000
+20000
+20000
+20000
+30000
+40000
+250000
+The average is: 72000.0
+The median is: 30000
+The range is from: 20000 to 0
+
+ ----jGRASP: operation complete.

@@ -1,0 +1,53 @@
+//Sean Coady
+//SortDoublesFromFile
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;
+public class SortDoublesFromFile
+{
+  public static void main(String[]args) throws IOException
+  {
+      double[]number = new double[100];
+		int size = readDataFromFile(args[0], number); // passes command line argument
+		sortNumbers(number);
+	 }
+  //reads list of doubles from doubles.txt
+  //returns number of doubles stored
+ public static int readDataFromFile(String fileName, double[]number) throws IOException
+   {
+	  Scanner fileScan = new Scanner(new File(fileName));
+	  int count = 0;
+	  System.out.println("Original Array");
+	  while(fileScan.hasNext() )
+	  {
+	    number[count] = fileScan.nextDouble();
+		 System.out.println(number[count]);
+		 count++;
+	  }
+	  return count;
+	}
+   public static void sortNumbers(double[]number)
+    {
+     for (int i = 0; i < number.length; i++) 
+	   { 
+       int min = i; 
+       for (int j = i; j < number.length; j++) 
+		  {
+         if (number[j] < number[min])
+           min = j;
+        }
+        //  swap the smallest one with  i.
+        
+         double tmp;
+         tmp = number[i];
+         number[i] = number[min];
+         number[min] = tmp;
+      }
+      int n = 0;
+		while(n<number.length)
+		{
+		  System.out.println(number[n]);
+		  n++;
+		}  
+	 }
+}

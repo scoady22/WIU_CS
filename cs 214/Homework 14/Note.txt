@@ -1,0 +1,3 @@
+Note:
+
+The GuessNumber game only runs if you hit New Game before you enter your first guess.

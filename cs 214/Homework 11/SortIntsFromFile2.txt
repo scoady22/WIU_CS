@@ -1,0 +1,31 @@
+//SortIntsFromFile2.java
+//Sean Coady
+import library.ArrayHelp;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Arrays;
+public class SortIntsFromFile2
+{
+  //reads in a list of integers from file give on command line
+  public static void main(String[]args) throws IOException
+    {
+	   int[]number = new int[100];
+		int size = readDataFromFile(args[0], number); // passes command line argument
+		ArrayHelp.printResults(number,size);
+	 }
+  //reads list of integers from file: integers.txt
+  //returns number of integers stored
+ public static int readDataFromFile(String fileName, int[]number) throws IOException
+   {
+	  Scanner fileScan = new Scanner(new File(fileName));
+	  int count = 0;
+	  System.out.println("Original Array");
+	  while(fileScan.hasNext() )
+	  {
+	    number[count] = fileScan.nextInt();
+		 System.out.println(number[count]);
+		 count++;
+	  }
+	  return count;
+	}
+}
